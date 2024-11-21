@@ -1,0 +1,14 @@
+body {
+    background-image: url('halloween_background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+h5 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.col-md-6 {
+    background-color: #C1E1C1;
+    border-radius: 1rem;
+}
