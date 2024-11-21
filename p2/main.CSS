@@ -1,0 +1,23 @@
+h1 {
+    font-size: 26pt;
+        }
+h2 {
+    color: darkolivegreen !important;      
+        }
+h3 {
+    color: forestgreen;       
+        }
+span {
+    color: darkgreen;
+        }
+img {
+    height: 500px;
+    width: 500px;        
+        }
+.displayed-image {
+    display: none;        
+        }
+.info-table th, .info-table td {
+    padding: 8px;
+    border: 2px solid gray;
+    }
