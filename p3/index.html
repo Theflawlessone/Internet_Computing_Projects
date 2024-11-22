@@ -1,29 +1,49 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="script.css">
+    <title>Simple Statistical Analysis</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="myjs.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
 <div class="sidenav">
-         <div class="login-main-text">
-            <h2>Application<br> Login Page</h2>
-            <p>Login or register from here to access.</p>
+         <div class="cal-main-text">
+            <h2>Calculator<br> Simple statistical analysis</h2>
+            <p>Maximum, minimum, mean (average), median, and range</p>
+             <i class="bi bi-calculator" style="font-size: 6rem;"></i>
          </div>
       </div>
       <div class="main">
          <div class="col-md-6 col-sm-12">
             <div class="login-form">
-               <form>
+               <form id="calcForm">
                   <div class="form-group">
-                     <label>User Name</label>
-                     <input type="text" class="form-control" placeholder="User Name">
+                     <label>Number One</label>
+                     <input type="text" class="form-control" id="num1" placeholder="First Number" required>
                   </div>
                   <div class="form-group">
-                     <label>Password</label>
-                     <input type="password" class="form-control" placeholder="Password">
+                     <label>Number Two</label>
+                     <input type="text" class="form-control" id="num2" placeholder="Second Number" required>
                   </div>
-                  <button type="submit" class="btn btn-black">Login</button>
-                  <button type="submit" class="btn btn-secondary">Register</button>
+                   <div class="form-group">
+                     <label>Number Three</label>
+                     <input type="text" class="form-control" id="num3" placeholder="Third Number" required>
+                  </div>
+                  <button type="submit" class="btn btn-black" id="cal">Calculate</button>
                </form>
+                <div class="results mt-4">
+                    <h3>Results</h3>
+                    <p id="max"></p>
+                    <p id="min"></p>
+                    <p id="mean"></p>
+                    <p id="median"></p>
+                    <p id="range"></p>
+                </div>
             </div>
          </div>
       </div>
